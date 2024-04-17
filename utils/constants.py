@@ -24,7 +24,7 @@ MTS_TEST = ['ArabicDigits',
 
 ITERATIONS = 1  # nb of random runs for random initializations
 
-ARCHIVE_NAMES = ['UCRArchive_2018', 'mts_archive']
+ARCHIVE_NAMES = ['UCRArchive_2018']
 
 dataset_names_for_archive = {'UCRArchive_2018': UNIVARIATE_TEST,
                              'mts_archive': MTS_TEST}

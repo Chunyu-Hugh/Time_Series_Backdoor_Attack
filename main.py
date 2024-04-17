@@ -173,7 +173,7 @@ def create_classifier(classifier_name, input_shape, nb_classes, output_directory
 ############################################### main
 
 # change this directory for your machine
-root_dir = '.'
+root_dir = '/home/lab/data/UCRArchive/'
 
 if sys.argv[1] in ['run_baseline', 'run_backdoor']:
     if sys.argv[1] == 'run_backdoor':
@@ -185,7 +185,7 @@ if sys.argv[1] in ['run_baseline', 'run_backdoor']:
     for classifier_name in CLASSIFIERS[0:]:
         print('classifier_name', classifier_name)
 
-        for archive_name in ARCHIVE_NAMES[1:]:
+        for archive_name in ARCHIVE_NAMES[0:]:
             print('\tarchive_name', archive_name)
 
             datasets_dict = read_all_datasets(root_dir, archive_name)
